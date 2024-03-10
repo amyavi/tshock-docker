@@ -10,9 +10,11 @@ services:
     stdin_open: true
 
     environment:
+      - "TERRARIA_EXTRA_PARAMS=-secure"
       - "TERRARIA_WORLD_SIZE=3"
     volumes:
       - ./data:/data
+      - ./data/plugins:/data/plugins:ro
 
     ports:
       - "7777:7777"
