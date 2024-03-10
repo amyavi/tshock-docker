@@ -9,4 +9,4 @@ export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=0
     -savedirectory /tmp/terraria-savedirectory \
     -connperip "$TERRARIA_CONN_PER_IP" -killinactivesocket \
     -autocreate "$TERRARIA_WORLD_SIZE" \
-    -world "$TERRARIA_WORLD_NAME"
+    -world "$TERRARIA_WORLD_NAME".wld
