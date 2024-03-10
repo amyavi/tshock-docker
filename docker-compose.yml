@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  tshock:
+    build: .
+    cap_drop: [ "ALL" ]
+    init: true
+
+    tty: true
+    stdin_open: true
+
+    environment:
+      - "TERRARIA_WORLD_SIZE=3"
+    volumes:
+      - ./data:/data
+
+    ports:
+      - "7777:7777"
+    restart: unless-stopped
